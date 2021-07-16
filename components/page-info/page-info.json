@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_page_info_page_infos",
+  "info": {
+    "name": "pageInfo",
+    "icon": "info",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "pageNo": {
+      "type": "integer"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "lessonTotalPageCount": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "levels",
+  "collectionName": "lessons",
   "info": {
-    "name": "level",
+    "name": "lesson",
     "description": ""
   },
   "options": {
@@ -12,13 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "levelNo": {
+    "lessonNo": {
       "type": "integer",
       "required": true,
       "min": 1
     },
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "image": {
       "model": "file",
@@ -32,9 +32,29 @@
       "required": false,
       "pluginOptions": {}
     },
-    "lessons": {
-      "via": "level",
-      "collection": "lesson"
+    "key": {
+      "type": "uid",
+      "required": true
+    },
+    "levelNo": {
+      "type": "integer"
+    },
+    "pages": {
+      "type": "dynamiczone",
+      "components": [
+        "page-content.image-with-audio",
+        "page-content.video-text",
+        "page-content.super-simple-page"
+      ]
+    },
+    "level": {
+      "via": "lessons",
+      "model": "level"
+    },
+    "usersCurrentLesson": {
+      "via": "currentLesson",
+      "plugin": "users-permissions",
+      "collection": "user"
     },
     "color": {
       "type": "enumeration",

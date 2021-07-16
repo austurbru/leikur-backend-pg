@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_page_content_video_texts",
+  "info": {
+    "name": "video-text",
+    "icon": "film",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "pageInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-info.page-info"
+    },
+    "category": {
+      "model": "category"
+    },
+    "video": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}
