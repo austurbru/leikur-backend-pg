@@ -15,9 +15,6 @@
       "repeatable": false,
       "component": "page-info.page-info"
     },
-    "category": {
-      "model": "category"
-    },
     "textAndTranslation": {
       "type": "component",
       "repeatable": false,
