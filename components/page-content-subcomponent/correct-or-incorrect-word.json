@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_page_content_correct_or_incorrect_words",
+  "info": {
+    "name": "correctOrIncorrectWord",
+    "icon": "baby-carriage",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "word": {
+      "type": "string",
+      "required": true
+    },
+    "isCorrect": {
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

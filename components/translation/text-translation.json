@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_translation_text_translations",
+  "info": {
+    "name": "text-translation",
+    "icon": "arrow-circle-right"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "translation": {
+      "type": "string"
+    }
+  }
+}

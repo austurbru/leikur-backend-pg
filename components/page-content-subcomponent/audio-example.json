@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_page_content_audio_examples",
+  "info": {
+    "name": "audioExample",
+    "icon": "award",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "audio": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "translation": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

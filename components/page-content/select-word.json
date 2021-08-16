@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_page_content_select_words",
+  "info": {
+    "name": "selectWord",
+    "icon": "atom",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "instructions": {
+      "type": "string",
+      "required": true
+    },
+    "pageInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-info.page-info"
+    },
+    "words": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page-content-subcomponent.correct-or-incorrect-word",
+      "required": true
+    },
+    "media": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-content-subcomponent.media-collection"
+    },
+    "sentence": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

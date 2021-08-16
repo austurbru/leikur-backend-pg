@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_page_content_short_text_with_translations",
+  "info": {
+    "name": "short-text-with-translation",
+    "icon": "apple-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "instructions": {
+      "type": "string"
+    },
+    "pageInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-info.page-info"
+    },
+    "category": {
+      "model": "category"
+    },
+    "textAndTranslation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "translation.text-translation"
+    },
+    "audioExample": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-content-subcomponent.audio-example"
+    },
+    "media": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-content-subcomponent.media-collection"
+    }
+  }
+}

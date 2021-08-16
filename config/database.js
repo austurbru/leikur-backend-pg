@@ -1,19 +1,3 @@
-// module.exports = ({ env }) => ({
-//   defaultConnection: 'default',
-//   connections: {
-//     default: {
-//       connector: 'bookshelf',
-//       settings: {
-//         client: 'sqlite',
-//         filename: env('DATABASE_FILENAME', '.tmp/data.db'),
-//       },
-//       options: {
-//         useNullAsDefault: true,
-//       },
-//     },
-//   },
-// });
-
 module.exports = ({ env }) => ({
   defaultConnection: 'default',
   connections: {
@@ -27,7 +11,9 @@ module.exports = ({ env }) => ({
         username: env('DATABASE_USERNAME', 'strapi'),
         password: env('DATABASE_PASSWORD', 'strapi'),
       },
-      options: {},
+      options: {
+        autoMigration: true, // this option is required in dbs other than sqlite so that tables can be created autuomatically
+      },
     },
   },
 });

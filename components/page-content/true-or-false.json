@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_page_content_true_or_falses",
+  "info": {
+    "name": "trueOrFalse",
+    "icon": "chess",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "instructions": {
+      "type": "string",
+      "required": true
+    },
+    "pageInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-info.page-info"
+    },
+    "statement": {
+      "type": "string",
+      "required": true
+    },
+    "explanation": {
+      "type": "string",
+      "required": true
+    },
+    "isTrue": {
+      "type": "boolean",
+      "required": true
+    },
+    "media": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-content-subcomponent.media-collection"
+    }
+  }
+}

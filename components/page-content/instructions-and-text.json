@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_page_content_instructions_and_texts",
+  "info": {
+    "name": "instructions-and-text",
+    "icon": "cart-arrow-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "instructions": {
+      "type": "string"
+    },
+    "pageInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-info.page-info"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "media": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-content-subcomponent.media-collection"
+    }
+  }
+}
