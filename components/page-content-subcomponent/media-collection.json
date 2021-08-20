@@ -46,7 +46,7 @@
     "pollyText": {
       "type": "string"
     },
-    "Voice": {
+    "pollyVoice": {
       "type": "enumeration",
       "enum": [
         "Male",

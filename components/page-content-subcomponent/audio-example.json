@@ -26,6 +26,16 @@
     "translation": {
       "type": "string",
       "required": true
+    },
+    "pollyText": {
+      "type": "string"
+    },
+    "pollyVoice": {
+      "type": "enumeration",
+      "enum": [
+        "Male",
+        "Female"
+      ]
     }
   }
 }
