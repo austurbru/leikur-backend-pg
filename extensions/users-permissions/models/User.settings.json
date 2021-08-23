@@ -70,9 +70,8 @@
     "currentPageSlug": {
       "type": "string"
     },
-    "preferredLocale": {
-      "type": "string",
-      "default": "en"
+    "currentLessonProgress": {
+      "type": "integer"
     }
   }
 }
